@@ -8,68 +8,70 @@
     <link rel="stylesheet" href="/src/css/output.css" />
   </head>
   <body>
-    <section class="bg-banner h-[90vh] w-screen bg-cover bg-center">
+    <section class="scroll-x h-[90vh] w-screen bg-hero bg-cover bg-no-repeat">
       <!-- Navigation Menu -->
       <div class="mx-auto w-[90%]">
-        <div class="flex justify-between">
-          <a
-            href="#"
-            class="bg-redButton shadow-shadow-red font-suezOne rounded-b-lg px-3 py-2 text-[24px] leading-10 text-white"
-          >
-            TripoGames
-          </a>
-          <nav class="shadow-shadow-red rounded-b-lg bg-white">
-            <ul class="font-poppins flex gap-3">
+        <div class="flex items-center justify-between">
+          <div>
+            <a
+              href="#"
+              class="rounded-b-lg bg-redButton px-[20px] py-3 font-suezOne text-[24px] leading-10 text-white shadow-shadowRed"
+            >
+              TripoGames
+            </a>
+          </div>
+
+          <nav class="rounded-b-lg bg-white shadow-shadowRed">
+            <ul class="flex gap-x-3 font-poppins">
               <li
-                class="bg-redButton rounded-bl-lg px-[20px] py-2 leading-10 text-white"
+                class="rounded-bl-lg bg-redButton px-[20px] py-2 leading-10 text-white"
               >
                 <a href="#">Home</a>
               </li>
               <li class="group relative px-[20px] py-2 leading-10">
                 <a href="#"> Games </a>
                 <ul
-                  class="shadow-shadow-red absolute left-[-12px] mt-3 hidden w-[120px] rounded-lg bg-white group-hover:block"
+                  class="absolute left-[-12px] mt-3 hidden w-[120px] rounded-lg bg-white shadow-shadowRed group-hover:block"
                 >
                   <li
-                    class="hover:bg-redButton px-2 py-2 hover:rounded-t-lg hover:text-white"
+                    class="px-2 py-2 hover:rounded-t-lg hover:bg-redButton hover:text-white"
                   >
                     <a href="#" class="cursor-pointer">Kipon</a>
                   </li>
-                  <li class="hover:bg-redButton px-2 py-2 hover:text-white">
+                  <li class="px-2 py-2 hover:bg-redButton hover:text-white">
                     <a href="#" class="cursor-pointer">Robotrix</a>
                   </li>
                   <li
-                    class="hover:bg-redButton rounded-b-lg px-2 py-2 hover:text-white"
+                    class="rounded-b-lg px-2 py-2 hover:bg-redButton hover:text-white"
                   >
                     <a href="#" class="cursor-pointer">Treasure Box</a>
                   </li>
                 </ul>
               </li>
               <li
-                class="hover:bg-redButton px-[20px] py-2 leading-10 hover:text-white"
+                class="px-[20px] py-2 leading-10 hover:bg-redButton hover:text-white"
               >
                 <a href="#">Careers</a>
               </li>
               <li
-                class="hover:bg-redButton px-[20px] py-2 leading-10 hover:text-white"
+                class="px-[20px] py-2 leading-10 hover:bg-redButton hover:text-white"
               >
                 <a href="#">About</a>
               </li>
               <li
-                class="hover:bg-redButton rounded-br-lg px-[20px] py-2 leading-10 hover:text-white"
+                class="rounded-br-lg px-[20px] py-2 leading-10 hover:bg-redButton hover:text-white"
               >
                 <a href="#">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
-
         <!-- Big Banner Text -->
-        <div class="pt-[15%]">
-          <h1 class="font-suezOne text-blueViolet text-8xl">
+        <div class="pt-[10%]">
+          <h1 class="font-suezOne text-8xl text-blueViolet">
             Made to Be Played
           </h1>
-          <p class="text-blueViolet py-3 text-2xl">
+          <p class="py-3 text-2xl text-blueViolet">
             The Very Best in Mobile Gaming
           </p>
         </div>
@@ -84,85 +86,473 @@
         </div>
       </div>
     </section>
-
     <!-- Game Section -->
     <section>
       <div class="mx-auto w-[90%] p-[10px] pt-6">
-        <div class="flex h-auto w-auto justify-between">
+        <div class="flex h-auto w-auto flex-wrap justify-between gap-3">
           <div
-            class="group relative h-[500px] w-[390px] overflow-hidden rounded-xl"
+            class="group relative h-[500px] w-[390px] cursor-pointer overflow-hidden rounded-xl shadow-galleryShadow"
           >
             <img
               src="../src/assets/images/kipon.jpg"
               alt=""
-              class="h-full w-full transform rounded-xl object-cover transition-transform duration-500 group-hover:scale-110"
+              class="h-full w-full transform rounded-xl object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110"
             />
             <div
               class="absolute inset-0 rounded-xl bg-[linear-gradient(180deg,_rgba(255,0,0,0.1)_0%,_rgba(255,0,0,0.5)_100%)] opacity-100 transition-opacity duration-500 group-hover:opacity-0"
             ></div>
             <h1
-              class="font-suezOne absolute bottom-[10%] left-[5%] w-full text-xl text-white"
+              class="absolute bottom-[10%] left-[5%] w-full font-suezOne text-xl text-white opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
             >
               Kipon
             </h1>
             <p
-              class="font-suezOne absolute bottom-[6%] left-[5%] w-full text-base text-white"
-            >
-              Casual - Free
-            </p>
-          </div>
-          <div class="relative h-[500px] w-[390px] rounded-xl">
-            <img
-              src="../src/assets/images/robotrix.jpg"
-              alt=""
-              class="h-full w-full rounded-xl object-cover"
-            />
-            <div
-              class="absolute inset-0 rounded-xl bg-[linear-gradient(180deg,_rgba(255,0,0,0.1)_0%,_rgba(255,0,0,0.5)_100%)]"
-            ></div>
-            <h1
-              class="font-suezOne absolute bottom-[10%] left-[5%] w-full text-xl text-white"
-            >
-              Robotrix
-            </h1>
-            <p
-              class="font-suezOne absolute bottom-[6%] left-[5%] w-full text-base text-white"
-            >
-              RPG - Free
-            </p>
-          </div>
-          <div class="relative h-[500px] w-[390px] rounded-xl">
-            <img
-              src="../src/assets/images/treasure-box.jpg"
-              alt=""
-              class="h-full w-full rounded-xl object-cover"
-            />
-            <div
-              class="absolute inset-0 rounded-xl bg-[linear-gradient(180deg,_rgba(255,0,0,0.1)_0%,_rgba(255,0,0,0.5)_100%)]"
-            ></div>
-            <h1
-              class="font-suezOne absolute bottom-[10%] left-[5%] w-full text-xl text-white"
-            >
-              Treasure Box
-            </h1>
-            <p
-              class="font-suezOne absolute bottom-[6%] left-[5%] w-full text-base text-white"
+              class="absolute bottom-[6%] left-[5%] w-full font-suezOne text-base text-white opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
             >
               Casual - Free
             </p>
           </div>
           <div
-            class="h-[500px] w-[390px] rounded-xl bg-[linear-gradient(180deg,_rgba(249,237,108,1)_0%,_rgba(249,237,108,1)_35%,_rgba(227,109,62,1)_100%)]"
+            class="group relative h-[500px] w-[390px] cursor-pointer overflow-hidden rounded-xl shadow-galleryShadow"
           >
-            <h1>Explore Games</h1>
+            <img
+              src="../src/assets/images/robotrix.jpg"
+              alt=""
+              class="h-full w-full transform rounded-xl object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 rounded-xl bg-[linear-gradient(180deg,_rgba(255,0,0,0.1)_0%,_rgba(255,0,0,0.5)_100%)] opacity-100 transition-opacity duration-500 group-hover:opacity-0"
+            ></div>
+            <h1
+              class="absolute bottom-[10%] left-[5%] z-10 w-full font-suezOne text-xl text-white opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+            >
+              Robotrix
+            </h1>
+            <p
+              class="absolute bottom-[6%] left-[5%] w-full font-suezOne text-base text-white opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+            >
+              RPG - Free
+            </p>
+          </div>
+          <div
+            class="group relative h-[500px] w-[390px] cursor-pointer overflow-hidden rounded-xl shadow-galleryShadow"
+          >
+            <img
+              src="../src/assets/images/treasure-box.jpg"
+              alt=""
+              class="h-full w-full transform rounded-xl object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 rounded-xl bg-[linear-gradient(180deg,_rgba(255,0,0,0.1)_0%,_rgba(255,0,0,0.5)_100%)] opacity-100 transition-opacity duration-500 group-hover:opacity-0"
+            ></div>
+            <h1
+              class="absolute bottom-[10%] left-[5%] w-full font-suezOne text-xl text-white opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+            >
+              Treasure Box
+            </h1>
+            <p
+              class="absolute bottom-[6%] left-[5%] w-full font-suezOne text-base text-white opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+            >
+              Adventure - Free
+            </p>
+          </div>
+          <div
+            class="group cursor-pointer rounded-xl bg-[linear-gradient(180deg,_rgba(249,237,108,1)_0%,_rgba(249,237,108,1)_35%,_rgba(227,109,62,1)_100%)] shadow-galleryShadow"
+          >
+            <div
+              class="relative flex h-[500px] w-[390px] items-center justify-center rounded-xl transition-colors duration-1000 ease-in-out group-hover:bg-yellow-300"
+            >
+              <h1
+                class="font-suezOne text-3xl text-[#622B3B] transition-transform duration-1000 ease-in-out group-hover:scale-110 group-hover:text-[#272443]"
+              >
+                Explore Games
+              </h1>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- About tripo section -->
+    <section>
+      <div class="mx-auto my-10 w-[90%]">
+        <div class="flex flex-col items-center justify-center">
+          <p
+            class="fade-in w-[40%] py-4 text-center font-suezOne text-2xl text-blueViolet"
+          >
+            About Tripo
+          </p>
+          <h1
+            class="fade-in w-[40%] overflow-hidden text-center font-suezOne text-5xl leading-[4.0rem] text-blueViolet"
+          >
+            Your Source for Mobile Entertainment
+          </h1>
+          <p
+            class="fade-in w-[40%] overflow-hidden py-4 text-center text-blueViolet"
+          >
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font. I’m a great place for you to
+            tell a story and let your users know a little more about you.
+          </p>
+          <button
+            class="fade-in-animated-y rounded-md bg-redButton px-7 py-4 text-white"
+          >
+            Let's get started
+          </button>
+          <div class="relative m-10">
+            <div
+              class="fade-in-animated-y image-container relative overflow-hidden rounded-2xl"
+            >
+              <img
+                src="../src/assets/images/designers.webp"
+                alt="alt"
+                class="transform transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-[rgba(217,72,72,0.1)] opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100"
+              ></div>
+            </div>
+            <img
+              src="../src/assets/images/sample.webp"
+              alt="alt"
+              class="fade-in absolute bottom-[-45px] left-[-90px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Games -->
+    <section>
+      <div class="mx-auto my-10 w-[90%]">
+        <div class="flex flex-col items-center justify-center pt-[10vh]">
+          <h1
+            class="fade-in w-[40%] overflow-hidden text-center font-suezOne text-5xl leading-[4.0rem] text-blueViolet"
+          >
+            Our Games
+          </h1>
+          <p
+            class="fade-in w-[40%] overflow-hidden py-4 text-center text-blueViolet"
+          >
+            I'm a paragraph. Click here to add your own text and edit me. I’m a
+            great place for you to tell a story and let your users know a little
+            more about you.
+          </p>
+        </div>
+      </div>
+      <!-- Games section with phone at the bg -->
+      <div
+        class="fade-in-animated-y h-[140vh] w-screen bg-phone bg-contain bg-center bg-no-repeat"
+      >
+        <div
+          class="mx-auto my-8 flex w-[70%] flex-wrap justify-between gap-x-96 gap-y-72"
+        >
+          <!-- Card -->
+          <div
+            class="fade-in-animated-x flex h-96 w-96 flex-col rounded-2xl bg-white py-7 pl-10 pr-2 shadow-shadowRed"
+          >
+            <div>
+              <!-- Game avatar -->
+              <div class="flex rounded-md">
+                <img
+                  src="../src/assets/images/wizzard.jpg"
+                  alt=""
+                  class="rounded-xl bg-white p-1 shadow-shadowRed"
+                />
+                <div class="p-3">
+                  <h1 class="font-poppins text-2xl font-bold text-blueViolet">
+                    Kipon
+                  </h1>
+                  <p class="font-poppins text-blueViolet">Casual - Free</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Game description -->
+            <p class="flex-grow overflow-y-hidden py-4">
+              I'm a paragraph. Click here to add your own text and edit me. I’m
+              a great place for you to tell a story and let your users know a
+              little more about you. I'm a paragraph. Click here to add your own
+              text and edit me. I’m a great place for you to tell a story. I'm a
+              paragraph. Click here to add your own text and edit me. I’m a
+              great place for you to tell a story and let your users know a
+              little more about you. I'm a paragraph. Click here to add your own
+              text and edit me. I’m a great place for you to tell a story.
+            </p>
+
+            <!-- Store images -->
+            <div class="flex gap-x-2 py-2">
+              <img src="../src/assets/images/apple.webp" alt="" />
+              <img src="../src/assets/images/google.webp" alt="" />
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="fade-in-animated-x flex h-96 w-96 flex-col rounded-2xl bg-white py-7 pl-10 pr-2 shadow-shadowRed"
+          >
+            <div>
+              <!-- Game avatar -->
+              <div class="flex rounded-md">
+                <img
+                  src="../src/assets/images/robot.jpg"
+                  alt=""
+                  class="rounded-xl bg-white p-1 shadow-shadowRed"
+                />
+                <div class="p-3">
+                  <h1 class="font-poppins text-2xl font-bold text-blueViolet">
+                    Robotrix
+                  </h1>
+                  <p class="font-poppins text-blueViolet">RPG - Free</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Game description -->
+            <p class="flex-grow overflow-y-hidden py-4">
+              I'm a paragraph. Click here to add your own text and edit me. I’m
+              a great place for you to tell a story and let your users know a
+              little more about you. I'm a paragraph. Click here to add your own
+              text and edit me.
+            </p>
+
+            <!-- Store images -->
+            <div class="flex gap-x-2 py-2">
+              <img src="../src/assets/images/apple.webp" alt="" />
+              <img src="../src/assets/images/google.webp" alt="" />
+            </div>
+          </div>
+          <!-- Card -->
+          <div
+            class="fade-in-animated-x flex h-96 w-96 flex-col rounded-2xl bg-white py-7 pl-10 pr-2 shadow-shadowRed"
+          >
+            <div>
+              <!-- Game avatar -->
+              <div class="flex rounded-md">
+                <img
+                  src="../src/assets/images/anim.jpg"
+                  alt=""
+                  class="rounded-xl bg-white p-1 shadow-shadowRed"
+                />
+                <div class="p-3">
+                  <h1 class="font-poppins text-2xl font-bold text-blueViolet">
+                    Treasure Box
+                  </h1>
+                  <p class="font-poppins text-blueViolet">Adventure - Free</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Game description -->
+            <p class="flex-grow overflow-y-hidden py-4">
+              I'm a paragraph. Click here to add your own text and edit me. I’m
+              a great place for you to tell a story and let your users know a
+              little more about you. I'm a paragraph. Click here to add your own
+              text and edit me.
+            </p>
+
+            <!-- Store images -->
+            <div class="flex gap-x-2 py-2">
+              <img src="../src/assets/images/apple.webp" alt="" />
+              <img src="../src/assets/images/google.webp" alt="" />
+            </div>
+          </div>
+          <div class="fade-in-animated-x">
+            <img src="../src/assets/images/pink_hueta.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section Join Us with parallax -->
+    <section
+      class="relative h-[85vh] w-screen bg-dragon bg-cover bg-fixed bg-center bg-no-repeat"
+    >
+      <div class="fade-in-animated-y absolute bottom-0 right-[20rem]">
+        <img src="../src/assets/images/mouse.png" alt="" />
+      </div>
+      <!-- parallax effect -->
+      <div class="fade-in-animated-y mx-auto w-[90%] pt-[6%]">
+        <div class="w-[50%]">
+          <p class="py-3 text-2xl text-white">Join Us</p>
+          <h1 class="leading-4xl font-suezOne text-7xl text-white">
+            It takes the world's best talent to change the game.
+          </h1>
+          <button
+            class="mt-8 rounded-md bg-yellow-300 px-7 py-4 text-blueViolet transition-colors duration-200 ease-in-out hover:bg-white"
+          >
+            Explore Careers
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative h-[85vh] w-screen bg-moonStars bg-cover bg-fixed bg-center bg-no-repeat"
+    >
+      <div
+        class="absolute left-[18.25rem] top-[-11rem] h-[80%] w-[20%] rounded-2xl bg-white px-5 py-7"
+      >
+        <h1 class="text-4xl font-bold text-blueViolet">Get in touch</h1>
+        <p class="overflow-y-hidden py-7 text-lg text-blueViolet">
+          I'm a paragraph. Click here to add your own text and edit me.
+        </p>
+        <form action="#">
+          <div class="mb-7 flex justify-between gap-2">
+            <div>
+              <label for="name" class="mb-2 block text-gray-700"
+                >First Name *</label
+              >
+              <input
+                type="text"
+                id="firstname"
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+            <div>
+              <label for="lastname" class="mb-2 block text-gray-700"
+                >Last Name *</label
+              >
+              <input
+                type="text"
+                id="lastname"
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+          </div>
+          <div class="mb-7">
+            <label for="email" class="mb-2 block text-gray-700">Email *</label>
+            <input
+              type="email"
+              id="email"
+              class="w-full rounded-md border border-gray-300 p-2"
+            />
+          </div>
+          <div class="mb-7">
+            <label for="description" class="mb-2 block text-gray-700"
+              >Leave us a message ...</label
+            >
+            <textarea
+              id="description"
+              rows="3"
+              class="w-full resize-none rounded-md border border-gray-300 p-2"
+            ></textarea>
+          </div>
+          <button class="w-full rounded-xl bg-blueViolet py-3 text-white">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="absolute bottom-3">
+          <div>
+            <a
+              href="#"
+              class="rounded-b-lg bg-redButton px-[20px] py-3 font-suezOne text-[24px] leading-10 text-white shadow-shadowRed"
+            >
+              TripoGames
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="flex h-[85vh] w-[50%] items-center justify-center">
+          <div class="h-[35%] w-[40%] rounded-xl bg-redButton px-5 py-7">
+            <h1 class="mb-10 text-2xl font-bold text-white">
+              Subscribe to Our Newsletter
+            </h1>
+            <div class="mb-7">
+              <label for="email" class="mb-2 block text-white">Email *</label>
+              <input
+                type="email"
+                id="email"
+                class="w-full rounded-md border border-gray-300 p-2"
+              />
+            </div>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="mr-2"
+                style="width: 25px; height: 25px"
+              />
+              <p class="text-base text-white">
+                Yes, subscribe me to your newsletter.
+              </p>
+              <button
+                class="rounded-xl bg-yellow-300 px-10 py-3 text-blueViolet transition-colors duration-200 ease-in-out hover:bg-white"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section>
+      <div class="mx-auto mt-4 w-[80%]">
+        <div class="mb-10 flex justify-center">
+          <h1>An Immersive Gaming Experience</h1>
+        </div>
+        <hr class="border-1 border-blueViolet" />
+        <div class="mx-auto mb-10 mt-10 flex w-[85%] justify-between">
+          <div>
+            <h1 class="text-xl font-bold text-blueViolet">Contact</h1>
+            <div class="my-5">
+              <a href="#"> <p class="text-grey mb-2">info@mysite.com</p></a>
+              <p class="text-grey mb-2">Tel: 123-456-7890</p>
+              <p class="text-grey mb-2">500 Terry Francine St</p>
+              <p class="text-grey mb-2">San Francisco, CA 94158</p>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-blueViolet">Navigation</h1>
+            <div class="my-5">
+              <a href="#"> <p class="text-grey mb-2">Games</p></a>
+              <a href="#"> <p class="text-grey mb-2">Careers</p></a>
+              <a href="#"> <p class="text-grey mb-2">About</p></a>
+              <a href="#"> <p class="text-grey mb-2">Contact</p></a>
+              <a href="#"> <p class="text-grey mb-2">Accessibility</p></a>
+              <a href="#"> <p class="text-grey mb-2">Terms & Conditions</p></a>
+              <a href="#"> <p class="text-grey mb-2">Privacy Policy</p></a>
+              <a href="#"> <p class="text-grey mb-2">Shipping Policy</p></a>
+              <a href="#"> <p class="text-grey mb-2">Refund Policy</p></a>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-blueViolet">Social</h1>
+            <div class="my-5">
+              <a href="#"> <p class="text-grey mb-2">Discord</p></a>
+              <a href="#"> <p class="text-grey mb-2">Twitch</p></a>
+              <a href="#"> <p class="text-grey mb-2">Facebook</p></a>
+              <a href="#"> <p class="text-grey mb-2">Youtube</p></a>
+              <a href="#"> <p class="text-grey mb-2">Twitter</p></a>
+              <a href="#"> <p class="text-grey mb-2">LinkedIn</p></a>
+            </div>
+          </div>
+          <div class="text-xl font-bold text-blueViolet">
+            <h1>Find Us On</h1>
+            <div class="my-5">
+              <img src="../src/assets/images/apple.webp" alt="alt" />
+              <img
+                src="../src/assets/images/google.webp"
+                alt="alt"
+                class="mt-1"
+              />
+            </div>
+          </div>
+        </div>
+        <hr class="border-1 border-blueViolet" />
+        <div class="my-10 flex justify-center">
+          <h1 class="text-grey">
+            © 2035 by Tripo. Powered and secured by
+            <a href="#" class="underline">Wix</a>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- end of games section -->
+    <script src="../src/js/scripts.js"></script>
   </body>
 </html>
-
-<!-- info.telecom.tm 
-394851 mlsp 
-poctalardan hatlar gelenok 
--->

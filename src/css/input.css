@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
   font-family: "Poppins";
-  src: url("/src/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("/src/assets/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -23,6 +23,42 @@
   }
 
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@layer utilities {
+  .fade-in-animated-y {
+    @apply translate-y-20 opacity-0;
+  }
+
+  .fade-in-animated-y.visible {
+    @apply translate-y-0 opacity-100;
+    transition:
+      opacity 1s ease-in-out,
+      transform 1s ease-in-out;
+  }
+
+  .fade-in-animated-x {
+    @apply -translate-x-20 opacity-0; /* Move out of view to the left */
+  }
+
+  /* Fade in and move back to the original position on the x-axis */
+  .fade-in-animated-x.visible {
+    @apply translate-x-0 opacity-100; /* Bring it back into view */
+    transition:
+      opacity 1s ease-in-out,
+      transform 1s ease-in-out; /* Transition effects for opacity and transform */
+  }
+
+  .fade-in {
+    @apply opacity-0;
+  }
+
+  .fade-in.visible {
+    @apply opacity-100;
+    transition:
+      opacity 1s ease-in-out,
+      transform 1s ease-in-out;
   }
 }
